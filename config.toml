@@ -148,13 +148,13 @@ disable404 = true
         position = "Technical Evangelist/Solutions Architect"
         dates = "2017 - 2019"
         company = "Amazon Web Services, London"
-        details = "As a Technical Evangelist I worked closely with the AWS community to deliver content to raise awareness of products and best practices across the entire range of AWS products and services, I covered user groups, spoke at AWS and Third Party evenets and provided support and presentations for streaming events on Twitch.tv. I specialised in containers, Serverless, and CI/CD pipelines, however, I covered other areas like AI/ML and data architecture. As a Solutions architected I focused on ISV's and helped them modernise their SaaS stacks to be more cloud native."
+        details = "As a Technical Evangelist I worked closely with the AWS community to deliver content to raise awareness of products and best practices across the entire range of AWS products and services, I covered user groups, spoke at AWS, third-party events, and provided support and presentations for streaming events on Twitch.tv. I specialised in containers, Serverless, and CI/CD pipelines, however, I covered other areas like AI/ML and data architecture. As a Solutions architect I focused on ISV's and helped them modernise their SaaS stacks to be more cloud-native."
 
         [[params.jobs.list]]
         position = "Founder and Open Source Architect"
         dates = "2011 - 2017"
         company = "Ngineered, London"
-        details = "Specialising in cloud and open source consultancy we helped companies deliver scalable, cloud architecture using the best of breed open source solutions. Ngineered offered managed instance support and application migration to allow businesses to seamlessly move their workloads to the cloud. Areas we specialised in are media (VOD delivery), microsite build outs and e-commerce solutions for high demand/high availability environments. Devops featured heavily in this role as we use industry standard and open source tools chains to deliver cloud based platforms.Clients included, Ticketmaster, Channel 4 Television and the Cordant Group."
+        details = "Specialising in cloud and open source consultancy we helped companies deliver scalable, cloud architecture using the best of breed open source solutions. Ngineered offered managed instance support and application migration to allow businesses to seamlessly move their workloads to the cloud. Areas we specialised in are media (VOD delivery), microsite build outs and e-commerce solutions for high demand/high availability environments. DevOps featured heavily in this role as we use industry standard and open source tools chains to deliver cloud based platforms.Clients included, Ticketmaster, Channel 4 Television, and the Cordant Group."
 
         [[params.jobs.list]]
         position = "Previous roles"
