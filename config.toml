@@ -1,0 +1,239 @@
+# Page settings
+
+baseurl = "https://ric.squarecows.com/"
+languageCode = "en-us"
+title = "Ric Harvey"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-aws.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Ric Harvey"
+        tagline = "Technical/Cloud Architect"
+        avatar = "profile.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa fa-envelope"
+        url = "mailto: ric+work@squarecows.com"
+        title = "ric@squarecows.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa fa-phone"
+        url = "tel:+44 07940419938"
+        title = "+44 07940419938"
+        
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa fa-youtube"
+        url = "https://www.youtube.com/channel/UCsW4Ie24zLktPoebP2bs15w"
+        title = "AWS Community Radio"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa fa-linkedin"
+        url = "//linkedin.com/in/richarvey"
+        title = "linkedin.com/in/richarvey"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa fa-github"
+        url = "//github.com/richarvey"
+        title = "github.com/richarvey"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa fa-twitter"
+        url = "//twitter.com/ric__harvey"
+        title = "@ric__harvey"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BSc Computer Science with Robotics and Intelligent Machinary"
+        college = "University of Essex"
+        dates = "1998 - 2002"
+
+        [[params.education.list]]
+        degree = "AWS Certified Solutions Architect Professional"
+        college = "AWS"
+        dates = "2020"
+	badge = "../assets/images/aws-certified-solutions-architect-professional.png"
+
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Guitar"
+
+        [[params.interests.list]]
+        interest = "Allotment"
+
+        [[params.interests.list]]
+        interest = "3d Printing"
+        
+	[[params.interests.list]]
+        interest = "Eco Engineering"
+        
+	[[params.interests.list]]
+        interest = "Formula E"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "I’m well versed in AWS and have worked with the API’s since the early days of SOAP to the modern-day REST API. I’ve built large-scale systems managed by a host of tooling including GitLab, Jenkins, Circle CI, and Travis. I mainly write code in python but have recently taken to rust. When it comes to IaC I’m a Terraform convert, however, I can also use Cloudformation when required. Over the past year, I’ve built out teams to help companies achieve and maintain AWS Partner statuses such as the Managed Services Partner (MSP) Programme and the Migration Competency."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Staff Cloud Architect"
+        dates = "2020 - 2022"
+        company = "DoiT International"
+        details = "Working at DoiT I've had the pleasure of building out a very talented multi-cloud team of engineers and architects across EMEA. Working across many different verticals it's great to see how DoiT can bring those folks' knowledge to other businesses whilst changing the model of consultancy. I was responsible for winning key deals in cloud transformation and migration scenarios. My focus was on AWS/GCP and winning migration deals to these hyperscalers. The deals were often worth several million over a three-year period and needed careful planning and negotiation to ensure the best deal for the customer, satisfying CxO needs and requirements. I also helped a small team of architects ramp up our AWS game and bring new competencies and Managed Service Practise (MSP) to the business generating even more opportunities for business. This has ticked all my boxes in allowing me to be hands-on technical whilst managing a team and creating new ideas."
+
+
+        [[params.jobs.list]]
+        position = "Technical Evangelist/Solutions Architect"
+        dates = "2017 - 2019"
+        company = "Amazon Web Services, London"
+        details = "As a Technical Evangelist I worked closely with the AWS community to deliver content to raise awareness of products and best practices across the entire range of AWS products and services, I covered user groups, spoke at AWS and Third Party evenets and provided support and presentations for streaming events on Twitch.tv. I specialised in containers, Serverless, and CI/CD pipelines, however, I covered other areas like AI/ML and data architecture. As a Solutions architected I focused on ISV's and helped them modernise their SaaS stacks to be more cloud native."
+
+        [[params.jobs.list]]
+        position = "Founder and Open Source Architect"
+        dates = "2011 - 2017"
+        company = "Ngineered, London"
+        details = "Specialising in cloud and open source consultancy we helped companies deliver scalable, cloud architecture using the best of breed open source solutions. Ngineered offered managed instance support and application migration to allow businesses to seamlessly move their workloads to the cloud. Areas we specialised in are media (VOD delivery), microsite build outs and e-commerce solutions for high demand/high availability environments. Devops featured heavily in this role as we use industry standard and open source tools chains to deliver cloud based platforms.Clients included, Ticketmaster, Channel 4 Television and the Cordant Group."
+
+        [[params.jobs.list]]
+        position = "Previous roles"
+        dates = "2004 - Present"
+        company = "UK"
+        image = "../assets/images/timeline.png"
+        size = "100%"
+
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "I run a few open source projects and user groups, I've put together a collection of some of my favourites below"
+
+        [[params.projects.list]]
+        title = "s3redirect"
+        url = "https://s3r.io"
+        tagline = "s3r is a databaseless URL shortener that leverages AWS S3 and Lambda to provide short URL's. You can also download the source and modify it for your needs. Just visit https://s3r.io to try it out."
+
+        [[params.projects.list]]
+        title = "AWS Docker Toolkit"
+        url = "https://github.com/WAOptics/aws-docker-toolkit"
+        tagline = "Currently at over 10k pulls this is a lightweight version of the AWS CLI in container form. It challenges the bloat of the offical CLI on docker and weighs in at 60%+ smaller."
+
+        [[params.projects.list]]
+        title = "nginx-php-fpm"
+        url = "https://github.com/richarvey/nginx-php-fpm"
+        tagline = "Easily get a test environment up and running for PHP and Nginx. Standing at 50M+ downloads it's my most sucessful container to date"
+
+        [[params.projects.list]]
+        title = "AWS Community Radio"
+        url = "https://s3r.io/acr"
+	image = "../assets/images/acr.png"
+        tagline = "A YouTube Channel for the AWS Community that I founded to help build out a global online community."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "85%"
+                
+        [[params.skills.list]]
+        skill = "Rust"
+        level = "40%"
+
+        [[params.skills.list]]
+        skill = "Linux"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "AWS"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "80%"
+        
+	[[params.skills.list]]
+        skill = "Containers"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "GCP"
+        level = "70%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
