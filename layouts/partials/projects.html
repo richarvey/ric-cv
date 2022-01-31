@@ -1,6 +1,6 @@
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ i18n "projects" }}</h2>
-                <div class="intro">
+		<div class="intro">
                     <p>{{ with .Site.Params.projects.intro }}{{ . | markdownify }}{{ end }}</p>
                 </div><!--//intro-->
 				{{ range .Site.Params.projects.list }}
@@ -8,4 +8,9 @@
 			<span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
                 </div><!--//item-->
 				{{ end }}
+                <!-- Prepare a container for your calendar. -->
+                <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+                </div>
             </section><!--//section-->

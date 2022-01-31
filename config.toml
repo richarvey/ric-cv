@@ -169,8 +169,7 @@ disable404 = true
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "I run a few open source projects and user groups, I've put together a collection of some of my favourites below"
-
+        intro = "I run a few open source projects and user groups, I've put together a collection of some of my favourites below:"
         [[params.projects.list]]
         title = "s3redirect"
         url = "https://s3r.io"
@@ -178,7 +177,7 @@ disable404 = true
 
         [[params.projects.list]]
         title = "AWS Docker Toolkit"
-        url = "https://github.com/WAOptics/aws-docker-toolkit"
+        url = "https://github.com/richarvey/aws-docker-toolkit"
         tagline = "Currently at over 10k pulls this is a lightweight version of the AWS CLI in container form. It challenges the bloat of the offical CLI on docker and weighs in at 60%+ smaller."
 
         [[params.projects.list]]
