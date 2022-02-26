@@ -42,6 +42,9 @@ a:focus {
 p {
   line-height: 1.5;
 }
+.orange {
+  color: #ff9900;
+}
 .wrapper {
   background: #232F3E;
   max-width: 960px;

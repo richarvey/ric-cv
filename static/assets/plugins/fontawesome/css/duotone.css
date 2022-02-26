@@ -1,7 +1,7 @@
 /*!
- * Font Awesome Pro 6.0.0-beta3 by @fontawesome - https://fontawesome.com
+ * Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
- * Copyright 2021 Fonticons, Inc.
+ * Copyright 2022 Fonticons, Inc.
  */
 :root, :host {
   --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone"; }
@@ -145,8 +145,20 @@
 .fad.fa-album::after, .fa-duotone.fa-album::after {
   content: "\f89f\f89f"; }
 
+.fad.fa-album-circle-plus::after, .fa-duotone.fa-album-circle-plus::after {
+  content: "\e48c\e48c"; }
+
+.fad.fa-album-circle-user::after, .fa-duotone.fa-album-circle-user::after {
+  content: "\e48d\e48d"; }
+
 .fad.fa-album-collection::after, .fa-duotone.fa-album-collection::after {
   content: "\f8a0\f8a0"; }
+
+.fad.fa-album-collection-circle-plus::after, .fa-duotone.fa-album-collection-circle-plus::after {
+  content: "\e48e\e48e"; }
+
+.fad.fa-album-collection-circle-user::after, .fa-duotone.fa-album-collection-circle-user::after {
+  content: "\e48f\e48f"; }
 
 .fad.fa-alicorn::after, .fa-duotone.fa-alicorn::after {
   content: "\f6b0\f6b0"; }
@@ -868,15 +880,6 @@
 .fad.fa-banjo::after, .fa-duotone.fa-banjo::after {
   content: "\f8a3\f8a3"; }
 
-.fad.fa-bank::after, .fa-duotone.fa-bank::after {
-  content: "\f19c\f19c"; }
-
-.fad.fa-institution::after, .fa-duotone.fa-institution::after {
-  content: "\f19c\f19c"; }
-
-.fad.fa-university::after, .fa-duotone.fa-university::after {
-  content: "\f19c\f19c"; }
-
 .fad.fa-barcode::after, .fa-duotone.fa-barcode::after {
   content: "\f02a\f02a"; }
 
@@ -1576,8 +1579,26 @@
 .fad.fa-bug::after, .fa-duotone.fa-bug::after {
   content: "\f188\f188"; }
 
+.fad.fa-bug-slash::after, .fa-duotone.fa-bug-slash::after {
+  content: "\e490\e490"; }
+
 .fad.fa-building::after, .fa-duotone.fa-building::after {
   content: "\f1ad\f1ad"; }
+
+.fad.fa-building-columns::after, .fa-duotone.fa-building-columns::after {
+  content: "\f19c\f19c"; }
+
+.fad.fa-bank::after, .fa-duotone.fa-bank::after {
+  content: "\f19c\f19c"; }
+
+.fad.fa-institution::after, .fa-duotone.fa-institution::after {
+  content: "\f19c\f19c"; }
+
+.fad.fa-museum::after, .fa-duotone.fa-museum::after {
+  content: "\f19c\f19c"; }
+
+.fad.fa-university::after, .fa-duotone.fa-university::after {
+  content: "\f19c\f19c"; }
 
 .fad.fa-buildings::after, .fa-duotone.fa-buildings::after {
   content: "\e0cc\e0cc"; }
@@ -3013,6 +3034,9 @@
 .fad.fa-cloud-drizzle::after, .fa-duotone.fa-cloud-drizzle::after {
   content: "\f738\f738"; }
 
+.fad.fa-cloud-exclamation::after, .fa-duotone.fa-cloud-exclamation::after {
+  content: "\e491\e491"; }
+
 .fad.fa-cloud-fog::after, .fa-duotone.fa-cloud-fog::after {
   content: "\f74e\f74e"; }
 
@@ -3042,6 +3066,9 @@
 
 .fad.fa-cloud-plus::after, .fa-duotone.fa-cloud-plus::after {
   content: "\e35e\e35e"; }
+
+.fad.fa-cloud-question::after, .fa-duotone.fa-cloud-question::after {
+  content: "\e492\e492"; }
 
 .fad.fa-cloud-rain::after, .fa-duotone.fa-cloud-rain::after {
   content: "\f73d\f73d"; }
@@ -4603,6 +4630,12 @@
 .fad.fa-file-check::after, .fa-duotone.fa-file-check::after {
   content: "\f316\f316"; }
 
+.fad.fa-file-circle-info::after, .fa-duotone.fa-file-circle-info::after {
+  content: "\e493\e493"; }
+
+.fad.fa-file-circle-plus::after, .fa-duotone.fa-file-circle-plus::after {
+  content: "\e494\e494"; }
+
 .fad.fa-file-code::after, .fa-duotone.fa-file-code::after {
   content: "\f1c9\f1c9"; }
 
@@ -5059,6 +5092,9 @@
 .fad.fa-step-forward::after, .fa-duotone.fa-step-forward::after {
   content: "\f051\f051"; }
 
+.fad.fa-frame::after, .fa-duotone.fa-frame::after {
+  content: "\e495\e495"; }
+
 .fad.fa-franc-sign::after, .fa-duotone.fa-franc-sign::after {
   content: "\e18f\e18f"; }
 
@@ -5129,10 +5165,25 @@
   content: "\f5f4\f5f4"; }
 
 .fad.fa-gauge::after, .fa-duotone.fa-gauge::after {
-  content: "\f625\f625"; }
+  content: "\f624\f624"; }
 
 .fad.fa-dashboard::after, .fa-duotone.fa-dashboard::after {
-  content: "\f625\f625"; }
+  content: "\f624\f624"; }
+
+.fad.fa-gauge-med::after, .fa-duotone.fa-gauge-med::after {
+  content: "\f624\f624"; }
+
+.fad.fa-tachometer-alt-average::after, .fa-duotone.fa-tachometer-alt-average::after {
+  content: "\f624\f624"; }
+
+.fad.fa-gauge-circle-bolt::after, .fa-duotone.fa-gauge-circle-bolt::after {
+  content: "\e496\e496"; }
+
+.fad.fa-gauge-circle-minus::after, .fa-duotone.fa-gauge-circle-minus::after {
+  content: "\e497\e497"; }
+
+.fad.fa-gauge-circle-plus::after, .fa-duotone.fa-gauge-circle-plus::after {
+  content: "\e498\e498"; }
 
 .fad.fa-gauge-high::after, .fa-duotone.fa-gauge-high::after {
   content: "\f625\f625"; }
@@ -5155,12 +5206,6 @@
 .fad.fa-tachometer-alt-fastest::after, .fa-duotone.fa-tachometer-alt-fastest::after {
   content: "\f626\f626"; }
 
-.fad.fa-gauge-med::after, .fa-duotone.fa-gauge-med::after {
-  content: "\f624\f624"; }
-
-.fad.fa-tachometer-alt-average::after, .fa-duotone.fa-tachometer-alt-average::after {
-  content: "\f624\f624"; }
-
 .fad.fa-gauge-min::after, .fa-duotone.fa-gauge-min::after {
   content: "\f628\f628"; }
 
@@ -5168,7 +5213,13 @@
   content: "\f628\f628"; }
 
 .fad.fa-gauge-simple::after, .fa-duotone.fa-gauge-simple::after {
-  content: "\f62a\f62a"; }
+  content: "\f629\f629"; }
+
+.fad.fa-gauge-simple-med::after, .fa-duotone.fa-gauge-simple-med::after {
+  content: "\f629\f629"; }
+
+.fad.fa-tachometer-average::after, .fa-duotone.fa-tachometer-average::after {
+  content: "\f629\f629"; }
 
 .fad.fa-gauge-simple-high::after, .fa-duotone.fa-gauge-simple-high::after {
   content: "\f62a\f62a"; }
@@ -5190,12 +5241,6 @@
 
 .fad.fa-tachometer-fastest::after, .fa-duotone.fa-tachometer-fastest::after {
   content: "\f62b\f62b"; }
-
-.fad.fa-gauge-simple-med::after, .fa-duotone.fa-gauge-simple-med::after {
-  content: "\f629\f629"; }
-
-.fad.fa-tachometer-average::after, .fa-duotone.fa-tachometer-average::after {
-  content: "\f629\f629"; }
 
 .fad.fa-gauge-simple-min::after, .fa-duotone.fa-gauge-simple-min::after {
   content: "\f62d\f62d"; }
@@ -6850,6 +6895,9 @@
 .fad.fa-memo-circle-check::after, .fa-duotone.fa-memo-circle-check::after {
   content: "\e1d9\e1d9"; }
 
+.fad.fa-memo-circle-info::after, .fa-duotone.fa-memo-circle-info::after {
+  content: "\e49a\e49a"; }
+
 .fad.fa-memo-pad::after, .fa-duotone.fa-memo-pad::after {
   content: "\e1da\e1da"; }
 
@@ -7360,11 +7408,23 @@
 .fad.fa-o::after, .fa-duotone.fa-o::after {
   content: "\4f\4f"; }
 
+.fad.fa-object-exclude::after, .fa-duotone.fa-object-exclude::after {
+  content: "\e49c\e49c"; }
+
 .fad.fa-object-group::after, .fa-duotone.fa-object-group::after {
   content: "\f247\f247"; }
 
+.fad.fa-object-intersect::after, .fa-duotone.fa-object-intersect::after {
+  content: "\e49d\e49d"; }
+
+.fad.fa-object-subtract::after, .fa-duotone.fa-object-subtract::after {
+  content: "\e49e\e49e"; }
+
 .fad.fa-object-ungroup::after, .fa-duotone.fa-object-ungroup::after {
   content: "\f248\f248"; }
+
+.fad.fa-object-union::after, .fa-duotone.fa-object-union::after {
+  content: "\e49f\e49f"; }
 
 .fad.fa-objects-align-bottom::after, .fa-duotone.fa-objects-align-bottom::after {
   content: "\e3bb\e3bb"; }
@@ -7492,17 +7552,26 @@
 .fad.fa-pager::after, .fa-duotone.fa-pager::after {
   content: "\f815\f815"; }
 
+.fad.fa-paint-roller::after, .fa-duotone.fa-paint-roller::after {
+  content: "\f5aa\f5aa"; }
+
+.fad.fa-paintbrush::after, .fa-duotone.fa-paintbrush::after {
+  content: "\f1fc\f1fc"; }
+
 .fad.fa-paint-brush::after, .fa-duotone.fa-paint-brush::after {
   content: "\f1fc\f1fc"; }
 
-.fad.fa-paint-brush-fine::after, .fa-duotone.fa-paint-brush-fine::after {
+.fad.fa-paintbrush-fine::after, .fa-duotone.fa-paintbrush-fine::after {
   content: "\f5a9\f5a9"; }
 
 .fad.fa-paint-brush-alt::after, .fa-duotone.fa-paint-brush-alt::after {
   content: "\f5a9\f5a9"; }
 
-.fad.fa-paint-roller::after, .fa-duotone.fa-paint-roller::after {
-  content: "\f5aa\f5aa"; }
+.fad.fa-paint-brush-fine::after, .fa-duotone.fa-paint-brush-fine::after {
+  content: "\f5a9\f5a9"; }
+
+.fad.fa-paintbrush-alt::after, .fa-duotone.fa-paintbrush-alt::after {
+  content: "\f5a9\f5a9"; }
 
 .fad.fa-paintbrush-pencil::after, .fa-duotone.fa-paintbrush-pencil::after {
   content: "\e206\e206"; }
@@ -7659,6 +7728,9 @@
 
 .fad.fa-pen-nib::after, .fa-duotone.fa-pen-nib::after {
   content: "\f5ad\f5ad"; }
+
+.fad.fa-pen-nib-slash::after, .fa-duotone.fa-pen-nib-slash::after {
+  content: "\e4a1\e4a1"; }
 
 .fad.fa-pen-paintbrush::after, .fa-duotone.fa-pen-paintbrush::after {
   content: "\f618\f618"; }
@@ -8302,6 +8374,15 @@
 .fad.fa-rectangle-code::after, .fa-duotone.fa-rectangle-code::after {
   content: "\e322\e322"; }
 
+.fad.fa-rectangle-history::after, .fa-duotone.fa-rectangle-history::after {
+  content: "\e4a2\e4a2"; }
+
+.fad.fa-rectangle-history-circle-plus::after, .fa-duotone.fa-rectangle-history-circle-plus::after {
+  content: "\e4a3\e4a3"; }
+
+.fad.fa-rectangle-history-circle-user::after, .fa-duotone.fa-rectangle-history-circle-user::after {
+  content: "\e4a4\e4a4"; }
+
 .fad.fa-rectangle-list::after, .fa-duotone.fa-rectangle-list::after {
   content: "\f022\f022"; }
 
@@ -8886,6 +8967,9 @@
 
 .fad.fa-store-alt::after, .fa-duotone.fa-store-alt::after {
   content: "\f54f\f54f"; }
+
+.fad.fa-shop-lock::after, .fa-duotone.fa-shop-lock::after {
+  content: "\e4a5\e4a5"; }
 
 .fad.fa-shop-slash::after, .fa-duotone.fa-shop-slash::after {
   content: "\e070\e070"; }
@@ -9846,6 +9930,9 @@
 
 .fad.fa-store::after, .fa-duotone.fa-store::after {
   content: "\f54e\f54e"; }
+
+.fad.fa-store-lock::after, .fa-duotone.fa-store-lock::after {
+  content: "\e4a6\e4a6"; }
 
 .fad.fa-store-slash::after, .fa-duotone.fa-store-slash::after {
   content: "\e071\e071"; }
@@ -10993,6 +11080,9 @@
 .fad.fa-user-robot::after, .fa-duotone.fa-user-robot::after {
   content: "\e04b\e04b"; }
 
+.fad.fa-user-robot-xmarks::after, .fa-duotone.fa-user-robot-xmarks::after {
+  content: "\e4a7\e4a7"; }
+
 .fad.fa-user-secret::after, .fa-duotone.fa-user-secret::after {
   content: "\f21b\f21b"; }
 
@@ -11148,6 +11238,12 @@
 
 .fad.fa-virus::after, .fa-duotone.fa-virus::after {
   content: "\e074\e074"; }
+
+.fad.fa-virus-covid::after, .fa-duotone.fa-virus-covid::after {
+  content: "\e4a8\e4a8"; }
+
+.fad.fa-virus-covid-slash::after, .fa-duotone.fa-virus-covid-slash::after {
+  content: "\e4a9\e4a9"; }
 
 .fad.fa-virus-slash::after, .fa-duotone.fa-virus-slash::after {
   content: "\e075\e075"; }

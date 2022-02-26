@@ -1,7 +1,7 @@
 /*!
- * Font Awesome Pro 6.0.0-beta3 by @fontawesome - https://fontawesome.com
+ * Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
- * Copyright 2021 Fonticons, Inc.
+ * Copyright 2022 Fonticons, Inc.
  */
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Pro");
@@ -135,6 +135,20 @@
   -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
           animation-timing-function: var(--fa-animation-timing, ease-in-out); }
 
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1)); }
+
 .fa-fade {
   -webkit-animation-name: fa-fade;
           animation-name: fa-fade;
@@ -177,6 +191,20 @@
   -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
           animation-timing-function: var(--fa-animation-timing, ease-in-out); }
 
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear); }
+
 .fa-spin {
   -webkit-animation-name: fa-spin;
           animation-name: fa-spin;
@@ -209,10 +237,12 @@
 
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
+  .fa-bounce,
   .fa-fade,
   .fa-beat-fade,
   .fa-flip,
   .fa-pulse,
+  .fa-shake,
   .fa-spin,
   .fa-spin-pulse {
     -webkit-animation-delay: -1ms;
@@ -221,10 +251,8 @@
             animation-duration: 1ms;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s; } }
+    transition-delay: 0s;
+    transition-duration: 0s; } }
 
 @-webkit-keyframes fa-beat {
   0%, 90% {
@@ -241,6 +269,52 @@
   45% {
     -webkit-transform: scale(var(--fa-beat-scale, 1.25));
             transform: scale(var(--fa-beat-scale, 1.25)); } }
+
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0); }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em)); }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0); }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em)); }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); } }
+
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0); }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em)); }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0); }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em)); }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0); } }
 
 @-webkit-keyframes fa-fade {
   50% {
@@ -279,6 +353,64 @@
   50% {
     -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
             transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg)); } }
+
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg); }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg); }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg); }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg); }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg); }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg); }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg); }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg); }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg); }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg); }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg); }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 @-webkit-keyframes fa-spin {
   0% {
@@ -436,8 +568,20 @@ readers do not read off random characters that represent icons */
 .fa-album::before {
   content: "\f89f"; }
 
+.fa-album-circle-plus::before {
+  content: "\e48c"; }
+
+.fa-album-circle-user::before {
+  content: "\e48d"; }
+
 .fa-album-collection::before {
   content: "\f8a0"; }
+
+.fa-album-collection-circle-plus::before {
+  content: "\e48e"; }
+
+.fa-album-collection-circle-user::before {
+  content: "\e48f"; }
 
 .fa-alicorn::before {
   content: "\f6b0"; }
@@ -1159,15 +1303,6 @@ readers do not read off random characters that represent icons */
 .fa-banjo::before {
   content: "\f8a3"; }
 
-.fa-bank::before {
-  content: "\f19c"; }
-
-.fa-institution::before {
-  content: "\f19c"; }
-
-.fa-university::before {
-  content: "\f19c"; }
-
 .fa-barcode::before {
   content: "\f02a"; }
 
@@ -1864,8 +1999,26 @@ readers do not read off random characters that represent icons */
 .fa-bug::before {
   content: "\f188"; }
 
+.fa-bug-slash::before {
+  content: "\e490"; }
+
 .fa-building::before {
   content: "\f1ad"; }
+
+.fa-building-columns::before {
+  content: "\f19c"; }
+
+.fa-bank::before {
+  content: "\f19c"; }
+
+.fa-institution::before {
+  content: "\f19c"; }
+
+.fa-museum::before {
+  content: "\f19c"; }
+
+.fa-university::before {
+  content: "\f19c"; }
 
 .fa-buildings::before {
   content: "\e0cc"; }
@@ -3301,6 +3454,9 @@ readers do not read off random characters that represent icons */
 .fa-cloud-drizzle::before {
   content: "\f738"; }
 
+.fa-cloud-exclamation::before {
+  content: "\e491"; }
+
 .fa-cloud-fog::before {
   content: "\f74e"; }
 
@@ -3330,6 +3486,9 @@ readers do not read off random characters that represent icons */
 
 .fa-cloud-plus::before {
   content: "\e35e"; }
+
+.fa-cloud-question::before {
+  content: "\e492"; }
 
 .fa-cloud-rain::before {
   content: "\f73d"; }
@@ -4891,6 +5050,12 @@ readers do not read off random characters that represent icons */
 .fa-file-check::before {
   content: "\f316"; }
 
+.fa-file-circle-info::before {
+  content: "\e493"; }
+
+.fa-file-circle-plus::before {
+  content: "\e494"; }
+
 .fa-file-code::before {
   content: "\f1c9"; }
 
@@ -5338,6 +5503,9 @@ readers do not read off random characters that represent icons */
 .fa-step-forward::before {
   content: "\f051"; }
 
+.fa-frame::before {
+  content: "\e495"; }
+
 .fa-franc-sign::before {
   content: "\e18f"; }
 
@@ -5408,10 +5576,25 @@ readers do not read off random characters that represent icons */
   content: "\f5f4"; }
 
 .fa-gauge::before {
-  content: "\f625"; }
+  content: "\f624"; }
 
 .fa-dashboard::before {
-  content: "\f625"; }
+  content: "\f624"; }
+
+.fa-gauge-med::before {
+  content: "\f624"; }
+
+.fa-tachometer-alt-average::before {
+  content: "\f624"; }
+
+.fa-gauge-circle-bolt::before {
+  content: "\e496"; }
+
+.fa-gauge-circle-minus::before {
+  content: "\e497"; }
+
+.fa-gauge-circle-plus::before {
+  content: "\e498"; }
 
 .fa-gauge-high::before {
   content: "\f625"; }
@@ -5434,12 +5617,6 @@ readers do not read off random characters that represent icons */
 .fa-tachometer-alt-fastest::before {
   content: "\f626"; }
 
-.fa-gauge-med::before {
-  content: "\f624"; }
-
-.fa-tachometer-alt-average::before {
-  content: "\f624"; }
-
 .fa-gauge-min::before {
   content: "\f628"; }
 
@@ -5447,7 +5624,13 @@ readers do not read off random characters that represent icons */
   content: "\f628"; }
 
 .fa-gauge-simple::before {
-  content: "\f62a"; }
+  content: "\f629"; }
+
+.fa-gauge-simple-med::before {
+  content: "\f629"; }
+
+.fa-tachometer-average::before {
+  content: "\f629"; }
 
 .fa-gauge-simple-high::before {
   content: "\f62a"; }
@@ -5469,12 +5652,6 @@ readers do not read off random characters that represent icons */
 
 .fa-tachometer-fastest::before {
   content: "\f62b"; }
-
-.fa-gauge-simple-med::before {
-  content: "\f629"; }
-
-.fa-tachometer-average::before {
-  content: "\f629"; }
 
 .fa-gauge-simple-min::before {
   content: "\f62d"; }
@@ -7129,6 +7306,9 @@ readers do not read off random characters that represent icons */
 .fa-memo-circle-check::before {
   content: "\e1d9"; }
 
+.fa-memo-circle-info::before {
+  content: "\e49a"; }
+
 .fa-memo-pad::before {
   content: "\e1da"; }
 
@@ -7639,11 +7819,23 @@ readers do not read off random characters that represent icons */
 .fa-o::before {
   content: "\4f"; }
 
+.fa-object-exclude::before {
+  content: "\e49c"; }
+
 .fa-object-group::before {
   content: "\f247"; }
 
+.fa-object-intersect::before {
+  content: "\e49d"; }
+
+.fa-object-subtract::before {
+  content: "\e49e"; }
+
 .fa-object-ungroup::before {
   content: "\f248"; }
+
+.fa-object-union::before {
+  content: "\e49f"; }
 
 .fa-objects-align-bottom::before {
   content: "\e3bb"; }
@@ -7771,17 +7963,26 @@ readers do not read off random characters that represent icons */
 .fa-pager::before {
   content: "\f815"; }
 
+.fa-paint-roller::before {
+  content: "\f5aa"; }
+
+.fa-paintbrush::before {
+  content: "\f1fc"; }
+
 .fa-paint-brush::before {
   content: "\f1fc"; }
 
-.fa-paint-brush-fine::before {
+.fa-paintbrush-fine::before {
   content: "\f5a9"; }
 
 .fa-paint-brush-alt::before {
   content: "\f5a9"; }
 
-.fa-paint-roller::before {
-  content: "\f5aa"; }
+.fa-paint-brush-fine::before {
+  content: "\f5a9"; }
+
+.fa-paintbrush-alt::before {
+  content: "\f5a9"; }
 
 .fa-paintbrush-pencil::before {
   content: "\e206"; }
@@ -7938,6 +8139,9 @@ readers do not read off random characters that represent icons */
 
 .fa-pen-nib::before {
   content: "\f5ad"; }
+
+.fa-pen-nib-slash::before {
+  content: "\e4a1"; }
 
 .fa-pen-paintbrush::before {
   content: "\f618"; }
@@ -8581,6 +8785,15 @@ readers do not read off random characters that represent icons */
 .fa-rectangle-code::before {
   content: "\e322"; }
 
+.fa-rectangle-history::before {
+  content: "\e4a2"; }
+
+.fa-rectangle-history-circle-plus::before {
+  content: "\e4a3"; }
+
+.fa-rectangle-history-circle-user::before {
+  content: "\e4a4"; }
+
 .fa-rectangle-list::before {
   content: "\f022"; }
 
@@ -9165,6 +9378,9 @@ readers do not read off random characters that represent icons */
 
 .fa-store-alt::before {
   content: "\f54f"; }
+
+.fa-shop-lock::before {
+  content: "\e4a5"; }
 
 .fa-shop-slash::before {
   content: "\e070"; }
@@ -10125,6 +10341,9 @@ readers do not read off random characters that represent icons */
 
 .fa-store::before {
   content: "\f54e"; }
+
+.fa-store-lock::before {
+  content: "\e4a6"; }
 
 .fa-store-slash::before {
   content: "\e071"; }
@@ -11272,6 +11491,9 @@ readers do not read off random characters that represent icons */
 .fa-user-robot::before {
   content: "\e04b"; }
 
+.fa-user-robot-xmarks::before {
+  content: "\e4a7"; }
+
 .fa-user-secret::before {
   content: "\f21b"; }
 
@@ -11427,6 +11649,12 @@ readers do not read off random characters that represent icons */
 
 .fa-virus::before {
   content: "\e074"; }
+
+.fa-virus-covid::before {
+  content: "\e4a8"; }
+
+.fa-virus-covid-slash::before {
+  content: "\e4a9"; }
 
 .fa-virus-slash::before {
   content: "\e075"; }

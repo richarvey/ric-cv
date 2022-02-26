@@ -200,30 +200,42 @@ disable404 = true
         [[params.skills.list]]
         skill = "Python"
         level = "85%"
+	icon = "fa-brands fa-python"
                 
         [[params.skills.list]]
         skill = "Rust"
         level = "40%"
+	icon = "fa-brands fa-rust"
+        
+	[[params.skills.list]]
+        skill = "Bash"
+        level = "99%"
+	icon = "fa-solid fa-terminal"
 
         [[params.skills.list]]
         skill = "Linux"
         level = "98%"
+	icon = "fa-brands fa-linux"
 
         [[params.skills.list]]
         skill = "AWS"
         level = "100%"
+	icon = "fa-brands fa-aws"
 
         [[params.skills.list]]
         skill = "Kubernetes"
         level = "80%"
+	icon = "fa-solid fa-truck-container"
         
 	[[params.skills.list]]
         skill = "Containers"
         level = "90%"
+	icon = "fa-solid fa-container-storage"
 
         [[params.skills.list]]
         skill = "GCP"
         level = "70%"
+	icon = "fa-brands fa-google"
 
     # Footer section
 
