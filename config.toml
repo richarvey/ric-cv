@@ -221,6 +221,11 @@ disable404 = true
         skill = "AWS"
         level = "100%"
 	icon = "fa-brands fa-aws"
+        
+	[[params.skills.list]]
+        skill = "GCP"
+        level = "70%"
+	icon = "fa-brands fa-google"
 
         [[params.skills.list]]
         skill = "Kubernetes"
@@ -233,9 +238,9 @@ disable404 = true
 	icon = "fa-solid fa-container-storage"
 
         [[params.skills.list]]
-        skill = "GCP"
-        level = "70%"
-	icon = "fa-brands fa-google"
+        skill = "Terraform"
+        level = "85%"
+	icon = "fa-solid fa-server"
 
     # Footer section
 
